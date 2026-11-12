@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-taiba: #F7F2E8;
+    --blue-taiba: #183B56;
+    --gold-taiba: #C99A42;
+    --gold-light: #E0B763;
+    --sand-border: #E8DFD0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  /* When LTR is active */
+  html[dir="ltr"] {
+    font-family: 'Plus Jakarta Sans', 'Cairo', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F7F2E8;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C99A42;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #183B56;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-cairo {
+  font-family: 'Cairo', sans-serif;
+}
+
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+/* Glass and subtle luxury borders */
+.taiba-card {
+  background-color: #FFFFFF;
+  border: 1px solid #EAE2D2;
+  box-shadow: 0 4px 20px -2px rgba(24, 59, 86, 0.05);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.taiba-card:hover {
+  border-color: #C99A42;
+  box-shadow: 0 12px 30px -4px rgba(24, 59, 86, 0.12);
+  transform: translateY(-2px);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #C99A42 0%, #E6C275 50%, #B8852B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-gradient-bg {
+  background: linear-gradient(135deg, #183B56 0%, #102638 100%);
+}
+
+/* ============================================================== */
+/* LUXOR NIGHT / PHARAONIC OBSIDIAN DARK THEME                   */
+/* ============================================================== */
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #0A131C;
+  color: #F7F2E8;
+}
+
+html.dark header,
+html.dark footer,
+html.dark nav {
+  background-color: rgba(11, 19, 27, 0.95);
+  border-color: #1E3144;
+}
+
+html.dark .taiba-card {
+  background-color: #121F2D;
+  border-color: #1E3144;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+  color: #F7F2E8;
+}
+
+html.dark .taiba-card:hover {
+  border-color: #C99A42;
+  box-shadow: 0 12px 30px -4px rgba(201, 154, 66, 0.25);
+}
+
+html.dark [class*="bg-[#F7F2E8]"] {
+  background-color: #0A131C !important;
+}
+
+html.dark [class*="bg-white"] {
+  background-color: #121F2D !important;
+}
+
+html.dark [class*="bg-stone-50"],
+html.dark [class*="bg-stone-100"] {
+  background-color: #162637 !important;
+}
+
+html.dark [class*="border-[#E8DFD0]"],
+html.dark [class*="border-[#EAE2D2]"],
+html.dark [class*="border-stone-200"],
+html.dark [class*="border-stone-100"] {
+  border-color: #1E3144 !important;
+}
+
+html.dark [class*="text-[#183B56]"] {
+  color: #F7F2E8 !important;
+}
+
+html.dark [class*="text-stone-700"],
+html.dark [class*="text-stone-600"] {
+  color: #CBD5E1 !important;
+}
+
+html.dark [class*="text-stone-500"] {
+  color: #94A3B8 !important;
+}
+
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background-color: #162637 !important;
+  color: #F7F2E8 !important;
+  border-color: #243B52 !important;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #0A131C;
+}
+

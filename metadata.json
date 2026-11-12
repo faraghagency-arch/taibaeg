@@ -1,0 +1,6 @@
+{
+  "name": "TAIBA | طيبة - منصة الأقصر السياحية المتكاملة",
+  "description": "منصة سياحية متكاملة وفاخرة لمدينة الأقصر ومعالمها الأثرية وكنوز طيبة بخمس لغات مع دليل سياحي تفاعلي، خريطة، مخطط رحلات، ولوحة تحكم شاملة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
